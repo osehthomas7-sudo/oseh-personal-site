@@ -1,7 +1,11 @@
 {
-  "name": "oseh-thomas-personal-site",
+  "name": "oseh-personal-site",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https:github.com/osehthomas-sudo/oseh-presonal-site",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -10,8 +14,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   },
   "browserslist": {
     "production": [

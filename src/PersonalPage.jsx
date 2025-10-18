@@ -16,7 +16,7 @@ export default function PersonalPage() {
           </div>
         </div>
 
-        {/* Social Links (text only) */}
+        {/* Social Links */}
         <div className="hidden md:flex gap-4 items-center text-gray-700">
           <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer">
             GitHub
