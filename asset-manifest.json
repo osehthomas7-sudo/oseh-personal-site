@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/oseh-personal-site/static/css/main.0eb73617.css",
-    "main.js": "/oseh-personal-site/static/js/main.ab1a04e5.js",
+    "main.css": "/oseh-personal-site/static/css/main.52f42ccc.css",
+    "main.js": "/oseh-personal-site/static/js/main.572396de.js",
     "index.html": "/oseh-personal-site/index.html",
-    "main.0eb73617.css.map": "/oseh-personal-site/static/css/main.0eb73617.css.map",
-    "main.ab1a04e5.js.map": "/oseh-personal-site/static/js/main.ab1a04e5.js.map"
+    "main.52f42ccc.css.map": "/oseh-personal-site/static/css/main.52f42ccc.css.map",
+    "main.572396de.js.map": "/oseh-personal-site/static/js/main.572396de.js.map"
   },
   "entrypoints": [
-    "static/css/main.0eb73617.css",
-    "static/js/main.ab1a04e5.js"
+    "static/css/main.52f42ccc.css",
+    "static/js/main.572396de.js"
   ]
 }
