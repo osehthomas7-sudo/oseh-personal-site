@@ -24,6 +24,13 @@ export default function Blog() {
       content: `Here are five tools that make my workflow smooth: Visual Studio Code, Figma, GitHub, Canva, 
       and ChatGPT. Each of them helps me build better, faster, and smarter.`,
     },
+    {
+  id: 4,
+  title: "My First Freelance Client",
+  date: "November 2025",
+  content: "This post is about how I got my first freelance job online...",
+},
+
   ];
 
   return (

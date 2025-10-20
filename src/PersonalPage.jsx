@@ -19,6 +19,7 @@ export default function PersonalPage() {
         {/* Navigation */}
         <div className="hidden md:flex gap-4 items-center text-gray-700 font-medium">
           <a href="#work">Work</a>
+          <a href="#blog">Blog</a>
           <a href="#services">Services</a>
           <a href="#testimonials">Testimonials</a>
           <a href="#support">Support</a>
