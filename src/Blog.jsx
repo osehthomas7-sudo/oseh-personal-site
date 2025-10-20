@@ -3,45 +3,48 @@ import React from "react";
 export default function Blog() {
   const posts = [
     {
-      title: "Welcome to My Blog!",
+      id: 1,
+      title: "My Journey as a Developer",
       date: "October 2025",
-      summary: "This is where I share my creative ideas, design tips, and code experiments.",
-      link: "#",
+      content: `My name is Oseh Thomas, and my journey into tech started with curiosity and creativity.
+      I’ve always loved colors, motion, and building things that people can use. Over time, I learned how
+      to design and code websites that bring ideas to life.`,
     },
     {
-      title: "How I Built My Portfolio Site",
+      id: 2,
+      title: "How I Built This Website",
       date: "October 2025",
-      summary: "A colorful journey of how I created my React + TailwindCSS personal website.",
-      link: "#",
+      content: `This personal website was built using React and Tailwind CSS. My goal was to create something
+      that reflects my style — colorful, creative, and easy to navigate. I wanted each section to tell my story.`,
+    },
+    {
+      id: 3,
+      title: "5 Tools I Use Daily",
+      date: "October 2025",
+      content: `Here are five tools that make my workflow smooth: Visual Studio Code, Figma, GitHub, Canva, 
+      and ChatGPT. Each of them helps me build better, faster, and smarter.`,
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-pink-50 to-cyan-50 text-gray-900 antialiased">
-      <header className="text-center py-10">
-        <h1 className="text-4xl font-bold">My Blog</h1>
-        <p className="text-gray-600 mt-2">Stories, tutorials, and creativity in motion</p>
-      </header>
+    <section id="blog" className="bg-white/60 backdrop-blur rounded-2xl p-8 shadow-lg">
+      <h3 className="text-2xl font-bold mb-6 text-center">Blog & Insights</h3>
+      <p className="text-center text-gray-700 mb-8">
+        Here I share my thoughts, experiences, and lessons from my creative journey.
+      </p>
 
-      <main className="max-w-4xl mx-auto px-6 space-y-8">
-        {posts.map((post, i) => (
-          <article key={i} className="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
-            <h2 className="text-2xl font-semibold mb-2">{post.title}</h2>
-            <p className="text-sm text-gray-500 mb-3">{post.date}</p>
-            <p className="text-gray-700 mb-3">{post.summary}</p>
-            <a href={post.link} className="text-indigo-600 underline">Read more →</a>
+      <div className="grid gap-6">
+        {posts.map((post) => (
+          <article
+            key={post.id}
+            className="p-6 bg-white rounded-xl shadow hover:shadow-xl transition"
+          >
+            <h4 className="text-xl font-semibold mb-1">{post.title}</h4>
+            <p className="text-sm text-gray-500 mb-2">{post.date}</p>
+            <p className="text-gray-700 whitespace-pre-line">{post.content}</p>
           </article>
         ))}
-      </main>
-
-      <footer className="text-center text-gray-500 text-sm py-10 border-t border-gray-200">
-        © {new Date().getFullYear()} Oseh Thomas · Built with ❤️  
-        <div className="mt-2">
-          <a href="mailto:osehthomas7@gmail.com" className="text-indigo-600 underline">
-            osehthomas7@gmail.com
-          </a>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </section>
   );
 }
